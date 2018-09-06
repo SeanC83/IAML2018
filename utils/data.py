@@ -27,7 +27,7 @@ LETTERMATS = {
     'X': XMAT,
     'C': CMAT
 }
-LETTERMATS = {key: value.flatten() for (key, value) in LETTERMATS.iteritems()}
+LETTERMATS = {key: value.flatten() for (key, value) in LETTERMATS.items()}
 
 def load_letters(categories=['T', 'C'], num_obs=[5, 5], bounds=[-1, 1],
                  beta_params=None, shuffle=True, random_state=None):
@@ -77,7 +77,7 @@ def load_letters(categories=['T', 'C'], num_obs=[5, 5], bounds=[-1, 1],
     data_range = bounds[1] - bounds[0]
     data = data_range * data + bounds[0]
     if shuffle:
-        idx = range(np.sum(num_obs))
+        idx = np.arange(np.sum(num_obs))
         np.random.shuffle(idx)
         data = data[idx]
         target = target[idx]
