@@ -126,16 +126,16 @@ Before installing required modules, we need to obtain the repository since it in
 
 1. Navigate back to your home directory: `cd`
 2. Make a new directory and navigate to it
-    * `mkdir iaml2017`
-    * `cd iaml2017
+    * `mkdir iaml2018`
+    * `cd iaml2018
 
 Now you have two options:
 
-1. We recommend that you directly download a .zip file from https://github.com/JamesOwers/iaml2017 which will contain everything you need and save it in the folder you have just created. You can do this from the terminal by typing:
-    * `wget https://github.com/JamesOwers/iaml2017/archive/master.zip`
+1. We recommend that you directly download a .zip file from https://github.com/michael-camilleri/IAML2018 which will contain everything you need and save it in the folder you have just created. You can do this from the terminal by typing:
+    * `wget https://github.com/michael-camilleri/IAML2018/archive/master.zip`
     * `unzip master.zip`
 1. If **and only if** you are familiar and confident with using Git/GitHub, you can initialize a git directory, add the above repo as remote and pull everything into your local directory, something like:
-    * `git clone https://github.com/JamesOwers/iaml2017 ~/iaml2017/
+    * `git clone https://github.com/michael-camilleri/IAML2018 ~/iaml2018/
 
 ### *IMPORTANT*
 Supporting and teaching git is not in scope for this course so please only do this if you are happy to google your own solutions! That being said, git is a better alternative if you are familiar with it. We reccommend that you work with your own branch/fork as the git repository is read-only.
@@ -202,11 +202,11 @@ End-of-central-directory signature not found.  Either this file is not
   the last disk(s) of this archive.
 ```
 means that the file you've downloaded is likely incomplete. Try downloading from
-the [GitHub repo](https://github.com/JamesOwers/iaml2017) directly by clicking the green button and downloading the zip.
+the [GitHub repo](https://github.com/michael-camilleri/IAML2018) directly by clicking the green button and downloading the zip.
 
 ### wget: command not found
 You do not have wget installed! Either install it, download from
-the [GitHub repo](https://github.com/JamesOwers/iaml2017) directly by clicking the green button and download the zip, or try using another program like curl e.g. `curl -LOk https://github.com/JamesOwers/iaml2017/archive/master.zip`
+the [GitHub repo](https://github.com/michael-camilleri/IAML2018) directly by clicking the green button and download the zip, or try using another program like curl e.g. `curl -LOk https://github.com/michael-camilleri/IAML2018/archive/master.zip`
 
 ### conda: command not found or 'Conda never works in new terminal'
 DICE issue: DICE has a different set of bash startup mechanism, and you may need

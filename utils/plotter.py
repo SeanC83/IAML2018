@@ -45,3 +45,24 @@ def plot_hinton(matrix, max_weight=None, ax=None):
 
     ax.autoscale_view()
     ax.invert_yaxis()
+	
+
+def plot_confusion_matrix(cm, classes=None, title='Confusion matrix'):
+    """Plots a confusion matrix."""
+    if classes is not None:
+        sns.heatmap(cm, xticklabels=classes, yticklabels=classes, vmin=0., vmax=1., annot=True)
+    else:
+        sns.heatmap(cm, vmin=0., vmax=1.)
+    plt.title(title)
+    plt.ylabel('True label')
+    plt.xlabel('Predicted label')
+	
+	
+def scatter_jitter(arr1, arr2, jitter=0.2):
+    """ Plots a joint scatter plot of two arrays by adding small noise to each example. 
+    Noise is proportional to variance in each dimension. """
+    arr1 = np.asarray(arr1)
+    arr2 = np.asarray(arr2)
+    arr1 = arr1 + jitter*arr1.std(axis=0)*np.random.standard_normal(arr1.shape)
+    arr2 = arr2 + jitter*arr2.std(axis=0)*np.random.standard_normal(arr2.shape)
+    plt.scatter(arr1, arr2, marker=4)
