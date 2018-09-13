@@ -3,8 +3,7 @@
 These instructions are written for set up on DICE / a Unix environment.
 
 **Distance learners please note**:
-We recommend two options for working remotely. We preference that you use your
-own machine:
+We recommend two options for working remotely (we prefer that you use option (1): i.e. your own machine)
 
 1. Use your own machine! Conda installation should work fine on your own
 computer. You must still have a DICE account: when submitting assignments, you
